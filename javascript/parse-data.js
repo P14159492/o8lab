@@ -9,12 +9,25 @@
     Rewrite this to make it *loop* through all the lecturers' names. 
     (Note the ES6 'template literal' syntax):
   */
-  let theData =  `${obj.lecturers[1].firstName} ${obj.lecturers[1].lastName}`;
+  
+  let theData =  "";
+
+
+
   
   // populates the chosen element's content with the data:
-  demoData.innerHTML = theData; 
+  
+  let i;
+  for (i = 0; i < obj.lecturers.length; i++) {
+	theData += `<li>${obj.lecturers[i].firstName} ${obj.lecturers[i].lastName} ${obj.lecturers[i].roomNumber}</li>`;
+	
+  }
+  
 
-  /*
+  demoData.innerHTML = theData; 
+ 
+  
+   /*
     EXERCISE 02:
     Once you have looped through all the data, present the 
     results on the page, styled with CSS.

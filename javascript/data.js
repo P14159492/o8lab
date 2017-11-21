@@ -2,23 +2,28 @@ let jsonString = `
 { "lecturers": [
   { 
     "firstName":"Dave" ,
-    "lastName":"Everitt"
+    "lastName":"Everitt",
+	"roomNumber": "1"
   },
   {
     "firstName":"Fania",
-    "lastName":"Raczinski"
+    "lastName":"Raczinski",
+	"roomNumber": "2"
   },
   {
     "firstName":"Luke",
-    "lastName":"Attwood"
+    "lastName":"Attwood",
+	"roomNumber": "3"
   },
   {
     "firstName":"David",
-    "lastName":"Smallwood"
+    "lastName":"Smallwood",
+	"roomNumber": "4"
   },
   {
     "firstName":"Clinton",
-    "lastName":"Ingrams"
+    "lastName":"Ingrams",
+	"roomNumber": "5"
   }
 ]}
 `;
